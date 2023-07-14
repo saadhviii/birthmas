@@ -47,10 +47,11 @@ body {
   font-size: 70px;
   /* background-image: url("https://tenor.com/view/cute-hearts-wholesome-love-gif-16004274.gif");
   background-repeat:repeat; */
-  background: linear-gradient( #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background: linear-gradient( #62d8df, #bfbbef, #af46e0, #dd00f3);
   /* background-image: url("https://giphy.com/gifs/psychedelic-pink-heart-pastel-sK6FWRzTcJksOvE3a4.gif");
   background-repeat:repeat; */
   background-size: 1800% 1800%;
+
 
   -webkit-animation: rainbow 18s ease infinite;
   -z-animation: rainbow 18s ease infinite;
@@ -79,8 +80,21 @@ body {
   }
 }
 
+
 .info {
-  font-size: 80px;
+  font-size: 60px;
+}
+
+.info9{
+  color:#10153d61;
+}
+
+.info1{
+  color: rgb(67, 52, 52);
+}
+
+.info2{
+  color: rgb(67, 52, 52);
 }
 
 #notBirthdayTime {
