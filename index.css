@@ -6,8 +6,8 @@ body {
   background-repeat:repeat;
   font-family: 'Staatliches', cursive;
   background-size: cover;
-
-  -webkit-animation: rainbow 18s ease infinite;
+}
+  /* -webkit-animation: rainbow 18s ease infinite;
   -z-animation: rainbow 18s ease infinite;
   -o-animation: rainbow 18s ease infinite;
     animation: rainbow 18s ease infinite;}
@@ -31,7 +31,7 @@ body {
       0%{background-position:0% 82%}
       50%{background-position:100% 19%}
       100%{background-position:0% 82%}
-  }
+  } */
   
 
 
