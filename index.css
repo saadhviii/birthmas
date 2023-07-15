@@ -182,5 +182,34 @@ body {
   border-color: pink;
   border-radius: 100%;
 }
+#media{
+  visibility: hidden;
+  /* height:0% */
+}
+#play1{
+  color: #10153d61; 
+  border: 0px; 
+  font-size: 24px;
+  background-color:#af46e027;
+   /*linear-gradient( #62d8df, #bfbbef, #af46e0, #dd00f3); */
+   border: 50% solid linear-gradient( #62d8df, #bfbbef, #af46e0, #dd00f3);
+  border-radius: 12px;
+  padding:1%;
+  visibility: hidden;
+}
+#play1:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#catPic{
+  position: absolute;
+  bottom: 55.1%;
+  left:-9%;
+  visibility: hidden;
+}
+#catPicR{
+  position: absolute;
+  top: 72%;
+  left: 87%;
+}
 
 
