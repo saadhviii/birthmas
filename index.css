@@ -3,9 +3,10 @@ body {
   /* background: #f6f6f6;
   background-color: black; */
   background-image: url("https://gifdb.com/images/high/trippy-pastel-color-fluid-ghsujzti66bg8pwf.gif");
-  background-repeat:repeat;
+  /* background-repeat:repeat; */
   font-family: 'Staatliches', cursive;
   background-size: cover;
+  width: auto;
 }
   /* -webkit-animation: rainbow 18s ease infinite;
   -z-animation: rainbow 18s ease infinite;
@@ -209,7 +210,17 @@ body {
 #catPicR{
   position: absolute;
   top: 72%;
-  left: 85%;
+  left:85%;
+  z-index: -99999;
 }
+
+#catdiv{
+  position: inherit;
+}
+/* #abc{
+  position: absolute;
+  top: 73%;
+  left:70%;
+} */
 
 
