@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap");
 body {
   /* background: #f6f6f6;
   background-color: black; */
@@ -8,33 +8,6 @@ body {
   background-size: cover;
   width: auto;
 }
-  /* -webkit-animation: rainbow 18s ease infinite;
-  -z-animation: rainbow 18s ease infinite;
-  -o-animation: rainbow 18s ease infinite;
-    animation: rainbow 18s ease infinite;}
-
-  @-webkit-keyframes rainbow {
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-  }
-  @-moz-keyframes rainbow {
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-  }
-  @-o-keyframes rainbow {
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-  }
-  @keyframes rainbow {
-      0%{background-position:0% 82%}
-      50%{background-position:100% 19%}
-      100%{background-position:0% 82%}
-  } */
-  
-
 
 .countdownContainer {
   position: absolute;
@@ -110,6 +83,7 @@ body {
 
 #birthdayTime {
   display: none;
+  /* align-items: flex-start; */
   height: 100%;
   width: 100%;
   left:0;
@@ -117,7 +91,7 @@ body {
   top: 0;
   bottom: 0;
   position: absolute;
-  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background: linear-gradient(124deg, #f30096, #dd00f3, #dd00f3,#f9607f,#f960b4,#f740c3);
   /* background-image: url("https://tenor.com/view/cute-hearts-wholesome-love-gif-16004274.gif");
   background-repeat:repeat; */
   background-size: 1800% 1800%;
@@ -125,7 +99,8 @@ body {
   -webkit-animation: rainbow 18s ease infinite;
   -z-animation: rainbow 18s ease infinite;
   -o-animation: rainbow 18s ease infinite;
-    animation: rainbow 18s ease infinite;}
+    animation: rainbow 18s ease infinite;
+  }
 
   @-webkit-keyframes rainbow {
       0%{background-position:0% 82%}
@@ -148,18 +123,71 @@ body {
       100%{background-position:0% 82%}
   }
 
-  #birthdayTime h3 {
-    position: absolute;
-    top: 20%;
-    right: 25%;
-    font-size: 50px;
-    color: white;
-    z-index: 1;
+  #birthdayTime #a{
+    /* display: flex;
+    align-items: flex-start; */
+      left: 45%;
+      display: inline-block;
+      padding: 0px;
+      margin-left: -4px;
+      font-size: 50px;
+      font-family: Bowlby One SC, sans-serif;
+      transform: scale(0.9, 1) rotatey(-10deg) translatey(0px);
+      animation: 2.2s scaling cubic-bezier(0.45, 0, 0.55, 1) infinite;
+      text-shadow: 0 0 #FFC0CB, 0 0 #f30096, 0 0 #C07F80;
+      transform-origin: 50% 100%;
+      color: #803945;
+      position: relative;
+      top: 10%;
+      transform-style: preserve-3d;
+      margin-right: 4px;
+      @for $i from 1 through 5 {
+        &:nth-child(#{$i}) {
+          animation-delay: 140ms * $i;
+        }
+      }
+    
+  }
+  @keyframes scaling {
+    20% {
+      text-shadow: 0px 0 #FFC0CB, 0px 0 #7E8265, 0px 0 #C07F80;
+      transform: scale(0.9, 1) rotatey(-10deg);
+    }
+    40% {
+      transform: scale(0.9, 2) translatey(16px);
+      text-shadow: -10px 0px #FFC0CB, -20px 0 #7E8265, -30px 0 #C07F80;
+    }
+    60% {
+      transform: scale(0.9, 1) rotatey(-5deg);
+      text-shadow: 0px 0 #FFC0CB, 0px 0 #7E8265, 0px 0 #C07F80;
+    }
+    80% {
+      transform: scale(0.9, 2) translatey(16px);
+      text-shadow: 10px 0px #FFC0CB, 20px 0 #7E8265, 30px 0 #C07F80;
+    }
+  }
+  @keyframes jump {
+    20% {
+      transform: translatey(0) scale(0);
+      opacity: 0;
+    }
+    40% {
+      transform: translatey(-50px) scale(1);
+      opacity: 1;
+    }
+    60% {
+      transform: translatey(0) scale(0);
+      opacity: 0;
+    }
+    80% {
+      transform: translatey(-50px) scale(1);
+      opacity: 1;
+    }
   }
 
   #heartheart{
     /* display: none; */
-    animation: cssAnimation 0s 3s forwards;
+    animation: cssAnimation 0s 5s forwards;
     visibility: hidden;
     position:absolute;
     top:58%;
@@ -168,19 +196,19 @@ body {
     border-radius: 100%;
     height: 250px;
     border: 6px dotted ;
-    border-color: pink;
+    border-color: #803945;
   }
   @keyframes cssAnimation {
     to   { visibility: visible; }
   }
 #unicornPicture {
-  position: relative;
+  position: absolute;
   /* height: 100%; */
   top: 10%;
   bottom: 10%;
   left:2%;
   border: 3px solid ;
-  border-color: pink;
+  border-color: #803945;
   border-radius: 100%;
 }
 #media{
@@ -202,12 +230,14 @@ body {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 #catPic{
+  
   position: absolute;
   bottom: 55.1%;
   left:-9%;
   visibility: hidden;
 }
 #catPicR{
+  cursor: pointer;
   position: absolute;
   top: 72%;
   left:85%;
