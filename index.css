@@ -239,7 +239,7 @@ body {
 #catPicR{
   cursor: pointer;
   position: absolute;
-  top: 72%;
+  top: 73.5%;
   left:85%;
   z-index: -99999;
 }
