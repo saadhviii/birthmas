@@ -91,9 +91,10 @@ body {
   top: 0;
   bottom: 0;
   position: absolute;
-  background: linear-gradient(124deg, #f30096, #dd00f3, #dd00f3,#f9607f,#f960b4,#f740c3);
+  /* background: linear-gradient(124deg, #f30096, #dd00f3, #dd00f3,#f9607f,#f960b4,#f740c3); */
   /* background-image: url("https://tenor.com/view/cute-hearts-wholesome-love-gif-16004274.gif");
   background-repeat:repeat; */
+  background: #B2A4FF;
   background-size: 1800% 1800%;
 
   -webkit-animation: rainbow 18s ease infinite;
@@ -126,7 +127,7 @@ body {
   #birthdayTime #a{
     /* display: flex;
     align-items: flex-start; */
-      left: 45%;
+      left: 47%;
       display: inline-block;
       padding: 0px;
       margin-left: -4px;
@@ -136,9 +137,9 @@ body {
       animation: 2.2s scaling cubic-bezier(0.45, 0, 0.55, 1) infinite;
       text-shadow: 0 0 #FFC0CB, 0 0 #f30096, 0 0 #C07F80;
       transform-origin: 50% 100%;
-      color: #803945;
+      color:  #7a3a45;  
       position: relative;
-      top: 10%;
+      top: 5%;
       transform-style: preserve-3d;
       margin-right: 4px;
       @for $i from 1 through 5 {
@@ -150,20 +151,20 @@ body {
   }
   @keyframes scaling {
     20% {
-      text-shadow: 0px 0 #FFC0CB, 0px 0 #7E8265, 0px 0 #C07F80;
+      text-shadow: 0px 0 #e29b9b, 0px 0 #d3cfa4;
       transform: scale(0.9, 1) rotatey(-10deg);
     }
     40% {
       transform: scale(0.9, 2) translatey(16px);
-      text-shadow: -10px 0px #FFC0CB, -20px 0 #7E8265, -30px 0 #C07F80;
+      text-shadow: -10px 0px #e29b9b, -20px 0 #d3cfa4;
     }
     60% {
       transform: scale(0.9, 1) rotatey(-5deg);
-      text-shadow: 0px 0 #FFC0CB, 0px 0 #7E8265, 0px 0 #C07F80;
+      text-shadow: 0px 0 #e29b9b, 0px 0 #d3cfa4;
     }
     80% {
       transform: scale(0.9, 2) translatey(16px);
-      text-shadow: 10px 0px #FFC0CB, 20px 0 #7E8265, 30px 0 #C07F80;
+      text-shadow: 10px 0px #e29b9b, 20px 0 #d3cfa4;
     }
   }
   @keyframes jump {
@@ -185,18 +186,73 @@ body {
     }
   }
 
+  #birthdayTime #divfortxt{
+    position: absolute;
+    left: 46%;
+    top: 20%;
+    border-width:19px;
+    border-style: ridge;
+    border-color:#d3cfa4;
+    background-color: #7a3a45;
+    /* animation-delay: 5s; */
+  }
+  #birthdayTime #txt{
+    
+    /* background: none; */
+    width: 62ch;
+    height:15ch;
+    animation: typing 3s steps(16) backwards, cursor 1s infinite;;
+    white-space: break-spaces;
+    overflow: hidden;
+    border-right: 0px solid;
+    color: #B2A4FF;
+    font-family: 'monospace';
+    /* animation-delay: 5s; */
+    word-wrap: break-word;
+  /*  text-shadow: 0 0 30px greenyellow; */
+    font-size: 20px;
+    font-weight: 200;
+    /* place-items: center; */
+  }
+  
+  #birthdayTime #txt br{
+    margin: 10px 0;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes cursor {
+    50% {
+      border-color: #ffffff;
+    }
+  }
+  /* @keyframes type{
+    from{width: 0%}
+  } */
+  
+  /* @keyframes blink{
+    50%{border-color: transparent}
+  } */
+
+
   #heartheart{
     /* display: none; */
     animation: cssAnimation 0s 5s forwards;
     visibility: hidden;
     position:absolute;
-    top:58%;
-    bottom:10%;
+    top:55%;
+    bottom:16%;
     right:2%;
-    border-radius: 100%;
+    border-radius: 2%;
     height: 250px;
-    border: 6px dotted ;
-    border-color: #803945;
+    border: 9px ridge ;
+    border-color: #d3cfa4;
   }
   @keyframes cssAnimation {
     to   { visibility: visible; }
@@ -207,9 +263,9 @@ body {
   top: 10%;
   bottom: 10%;
   left:2%;
-  border: 3px solid ;
-  border-color: #803945;
-  border-radius: 100%;
+  border: 9px ridge ;
+  border-color: #d3cfa4;
+  /* border-radius: 100%; */
 }
 #media{
   visibility: hidden;
@@ -241,7 +297,7 @@ body {
   position: absolute;
   top: 73.5%;
   left:85%;
-  z-index: 99999;
+  z-index: -1;
 }
 
 #catdiv{
@@ -252,5 +308,23 @@ body {
   top: 73%;
   left:70%;
 } */
+
+#button{
+  border: inset outset outset inset;
+  padding: 10px 42px;
+  position: absolute;
+  top:73%;
+  left:55%;
+  color: #d3cfa4;
+  background: #7a3a45;
+  border-radius: 3%;
+  cursor: pointer;
+  border-width: thick;
+}
+
+#button :hover{
+  background-color: #e40728;
+  
+}
 
 

@@ -53,6 +53,10 @@ document.addEventListener('DOMContentLoaded', function() {
       birthdayTime.style.display = "block"
       // heartheart.style.display=""
 
+      $(function() {
+        setTimeout(function() { $("#divfortxt").show(1500); }, 5000)
+        
+        })
     } else {
 
       daysCountdown.textContent = days
